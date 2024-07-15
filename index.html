@@ -6,6 +6,16 @@
         <title>project on bootstrap</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
+      .step-grid{
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+      }
+
+      .step{
+        font-size: 100px;
+        letter-spacing: .01px;
+      }
         .except{
           margin: 30px 0 0 135px;
         }
@@ -16,33 +26,50 @@
           margin: auto;
         } */
 
+       
+
         .shrink{
           width: 100vw;
+          /* height: 100vh; */
           /* margin-left: 300px; */
+        }
+
+        .carousel-item{
+          align-items: center;
+          height: 100vh;
         }
 
         .long{
           height: 420px;
         }
         .second{
-          width: 100vw;
-          height: 100vh;
+          /* width: 100vw; */
+          height: 900px;
           /* margin: auto; */
         }
 
         .stud5{
-          /* height:600px ; */
+          width: 100vw;
+          height: 900px;
         }
           
         .stud6{
-          /* height: 600px; */
+          width: 100vw;
+          height: 900px;
         }
 
         .stud7{
           /* height:600px ; */
-          /* width: 30vw; */
+          width: 100%;
+          height: 900px; 
+  
+         }  
+
+         .main{
+          width: 100vw;
           height: 100vh;
-        }
+          /* padding: 0 20px 0 0px; */
+         }
 
         .line{
           width: 760px;
@@ -99,9 +126,9 @@
             <!-- <h1 class="visually-hidden">Heroes examples</h1> -->
 
           
-            <div class="px-4 py-5 my-5 text-center">
+            <div class="px-4 py-5 my-5 text-center step-grid">
               <!-- <img class="d-block mx-auto mb-4" src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"> -->
-              <h1 class="display-5 fw-bold text-body-emphasis">We are one step away</h1>
+              <h1 class="display-5 fw-bold text-body-emphasis step">We are one step away</h1>
               <div class="col-lg-6 mx-auto">
                 <p class="lead mb-4">
                   We help to bridge the gap by actively engaging our clients in daily activities and shortening long distances through the use of latest technologies against the forces of limitation
@@ -114,8 +141,9 @@
             </div>
           </main>
 
-          <img src="student3.jpg" class="img-fluid shrink col-3" alt="computer trainer">
-
+          <div class="tutor">
+            <img src="./img/student10.jpg" class="img-fluid shrink col-3" alt="computer trainer">
+          </div>
 
 
           <h3 class="except">Our goals</h3>
@@ -165,29 +193,31 @@
 
 
           
-          <div id="carouselExampleCaptions" class="carousel slide second">
+          <div id="carouselExampleCaptions" class="carousel slide second w-100 h-100">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="student5.jpg" class="d-block w-100 stud5" alt="...">
+            <div class="carousel-inner ">
+              <div class="carousel-item active main">
+                <img src="./img/student12.jpg" class="d-block  stud5" alt="student with computer">
                 <div class="carousel-caption d-none d-md-block">
                   <h5>First slide label</h5>
                   <p>Some representative placeholder content for the first slide.</p>
                 </div>
               </div>
-              <div class="carousel-item">
-                <img src="student6.jpg" class="d-block w-100 stud6" alt="...">
+              <div class="carousel-item ">
+                <img src="./img/student9.jpg" class="d-block w-100
+                h-80 stud6" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                   <h5>Second slide label</h5>
                   <p>Some representative placeholder content for the second slide.</p>
                 </div>
               </div>
-              <div class="carousel-item">
-                <img src="student7.jpg" class="d-block w-100 stud7" alt="...">
+              <div class="carousel-item ">
+                <img src="./img/student11.jpg" class="d-block 
+                 stud7" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                   <h5>Third slide label</h5>
                   <p>Some representative placeholder content for the third slide.</p>
