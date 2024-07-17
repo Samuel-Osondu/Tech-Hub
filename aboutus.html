@@ -84,15 +84,16 @@
           height: 19vh;
         }
 
-       a{
-        border: solid 3px black;
-        border-radius: 100px;
+       .but{
+        background-color: rgb(224, 98, 228);
+        /* border: solid 3px black; */
+        border-radius: 10px;
         text-decoration: none;
-        color: #27282c;
+        color: white;
         text-align: center;
        }
 
-       a:hover{
+       .but:hover{
         color: white;
         background-color: rgb(224, 98, 228);
         align-items: center;
@@ -124,17 +125,18 @@
                 <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="services.html">Services</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Link
+                  services
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="services.html">Frontend Development</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="services">Desktop Publishing</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="services.html">Graphic Design</a></li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -177,10 +179,12 @@
         <div class="foot">
           <img class="sketch" src="./img/sketchhead.jpg" alt="">
           <div>
-            <p>Daily quotes to keep   yourself busy.
+            <p>Daily quotes to keep you busy.
             </p>
-            <a href="quotes.html">Keep reading
-            </a>
+            <button ></button>
+             <a type="button" class="btn but" href="quotes.html">Keep reading</a>
+           
+            
           </div>
         </div>
       </div>
