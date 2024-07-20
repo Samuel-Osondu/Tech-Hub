@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>project on bootstrap</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+     
+        body{
+        overflow-x: hidden;
+       } 
+
+       .backmage{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid 2px white;
+        width: 100vw;
+        height: 70vh;
+        justify-self: center;
+        /* margin-top: 80px;  */
+        /* border-radius:  100%; */
+        background-image: url("img/call.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+       }
+
+       .contactme{
+        color: white;
+        font-size: 100px;
+        font-weight: 900;
+       }
+
+      .step-grid{
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+      }
+
+      .bridge{
+        font-size: 30px;
+      }
+
+      .service, .contact{
+        font-size: 30px;
+      }
+
+
+
+      .step{
+        font-size: 100px;
+        letter-spacing: .01px;
+      }
+        .except{
+          margin: 30px 0 0 135px;
+        }
+
+        /* .contain{
+          width: 50%;
+          height: 50%;
+          margin: auto;
+        } */
+
+       
+
+        .shrink{
+          width: 100vw;
+          /* height: 100vh; */
+          /* margin-left: 300px; */
+        }
+
+        .misvis{
+          height: 45vh;
+          font-size: 18px;
+          /* margin: 40px 0 40px 400px; */
+        }
+
+        .misvis h2{
+          text-align: center;
+          font-weight: 900;
+          /* color: black; */
+        }
+
+        .misvis > p{
+          font-size: 23px;
+          font-weight: 600;
+        }
+
+        .carousel-item{
+          align-items: center;
+          height: 100vh;
+        }
+
+        .long{
+          height: 420px;
+        }
+        .second{
+          /* width: 100vw; */
+          height: 900px;
+          /* margin: auto; */
+        }
+
+        .stud5{
+          width: 100vw;
+          height: 900px;
+        }
+          
+        .stud6{
+          width: 100vw;
+          height: 900px;
+        }
+
+        .stud7{
+          /* height:600px ; */
+          width: 100%;
+          height: 900px; 
+  
+         }  
+
+         .overgrid{
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          /* border: solid 3px green; */
+          margin-top: 20px;
+          height: 740px;
+          background-color: aliceblue;
+          color:#27282c ;
+          font-weight: 900;
+         }
+         .gridage{
+          display: grid;
+          grid-template-columns: 2fr 0.5fr 0.5fr ;
+          grid-template-rows: 2fr 0.5fr 0.5fr;
+          /* border: solid 3px red; */
+          height: 780px;
+          /* margin: 0; */
+          /* padding: 0; */
+          /* row-gap: 0; */
+          column-gap: 0px;
+         }
+         .studgrid{
+          width: 350px;
+          height: 350px;
+          /* border: solid 3px red; */
+         }
+
+         .bigstud{
+          width: 700px;
+          height: 700px;
+         }
+
+         .grim{
+          display: block;
+         }
+
+         .main{
+          width: 100vw;
+          height: 100vh;
+         }
+
+         .flexmain{
+            display: flex;
+            justify-content: space-between;
+            width: 100vw;
+            height: 100vh;
+            border: solid red 3px;
+            padding: 2px;
+            /* padding: 0 0 10px 100px; */
+         }
+
+         .same{
+            width: 50px;
+            height: 50px;
+            margin-right: 20px;
+         }
+
+         .divid{
+            width: 700px;
+            /* height: 100vh; */
+            margin-left: 250px;
+            /* border: solid 3px white ; */
+         }
+
+        .line{
+          width: 400px;
+          /* margin-left: 250px; */
+        }
+
+        .imaco{
+            display: flex;
+        }
+
+        .minicontain{
+            width: 50vw;
+            font-size: 33px;
+            color: black;
+            padding:80px 0 0 100px;
+            margin: 0;
+        }
+
+       
+
+        .recept{
+            margin: 0;
+            width:50%;
+            height: 100vh;
+            background-image: url("img/receptionist.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .secmini{
+            display: flex;
+            /* justify-content: ; */
+            width: 100vw;
+            height: 100vh
+        }
+
+        .headform{
+            width: 50vw;
+            font-size: 20px;
+            font-weight: 600;
+            color: #151516;
+            
+        }
+
+        .headform > h2{
+            font-size: 40px;
+        }
+
+        label{
+            color: #3e3e41;
+        }
+        .put{
+            border-radius: 5px;
+            outline: none;
+            width: 35vw;
+            height: 3rem;
+        }
+
+
+        .deco{
+          display: flex;
+          justify-content: center;
+          text-decoration: none;
+          margin-top: 80px;
+          color: white;
+        }
+
+        .lab{
+          font-weight: 900;
+        }
+
+        .footer{
+          /* display: flex; */
+          /* grid-template-rows: 0.5fr 2fr 2fr 2fr; */
+          justify-content: center;
+          align-items: center;
+          /* text-align: center; */
+          max-width: 98.7%; 
+          height: 62vh;
+          font-size: 23px;
+          /* border: solid 2px red; */
+          /* text-wrap: fit-content; */
+          /* margin: 0; */
+          padding: 0;
+
+        }
+
+        .simage{
+          display: flex;
+          /* border: solid 2px red; */
+        }
+        .anc{
+          display: block;
+          color: #151516;
+
+        }
+
+        /* .foothead{
+          font-weight: 900;
+        } */
+
+        .footeranchor{
+          font-size: 60px;
+          text-decoration: none;
+        }
+
+        .basefoot{
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          gap: 130px;
+          height: 20vh;
+          width: 100%;
+          background-color: #27282c;
+          color: white ;
+          /* border:solid 2px blue; */
+
+        }
+
+        .ancc{
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="blue" class="bi bi-box-seam" viewBox="0 0 16 16">
+                <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2zm3.564 1.426L5.596 5 8 5.961 14.154 3.5zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z"/>
+              </svg> 
+              <span style="color: blue;">Tech Hub</span></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                </span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="aboutus.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="contactus.html">contact</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" aria-current="page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Services
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="services.html">Desktop Publishing</a></li>
+                      <li><a class="dropdown-item" href="services.html">Frontend Development</a></li>
+                      <li><a class="dropdown-item" href="services.html">Graphics Design</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-primary" type="submit">send</button>
+                </form>
+              </div>
+            </div>
+        </nav>
+
+
+        <div class="container-fluid backmage">
+            <p class="contactme">Contact us</p>
+        </div>
+        
+        <hr class="featurette-divider divid">
+
+        <div class="container-fluid flexmain">
+            <div class="container bg-light minicontain">
+                <div class="imaco">
+                    <img class="same" src="img/phone.png" alt="Phone Icon">
+                    <p>Phone</p>
+                </div>
+                <a style="text-decoration: none; display: block; color: rgb(53, 139, 237);" href="tel:+2348083330117">(+234)-808-333-0117</a>
+                <hr class="line">
+
+                <div class="imaco">
+                    <img class="same" src="img/email.png" alt="email logo">
+                    <p>Email</p>
+                </div>
+                <a style="text-decoration: none; display: block; color: rgb(53, 139, 237);" href="mailto:'osondusamuelchemist75@gmail.com">info@osondusamuelchemist752gmail.com</a>
+                <hr class="line">
+                <div class="imaco">
+                    <img class="same" src="img/address.png" alt="address logo">
+                    <p>Address</p>
+                </div>
+                    <p>1, New-Era Avenue off Bright Street,
+                        Favour Estate, Gbagada, Lagos
+                    </p>
+            </div>
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31709.767054145745!2d3.3849344!3d6.5568768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1721421416418!5m2!1sen!2sng" width="792" height="690" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <!-- https://maps.app.goo.gl/GnDkAye9chQAkWnz5 -->
+            </div>
+        </div>
+
+        <div class="secmini">
+            <div class="recept">     
+
+            </div>
+           
+            <div class="container bg-light text-dark headform">
+                <h2>Let us get back with you</h2>
+                <form action="">
+                    <Label>Your Name</Label> <br>
+                    <input class="container bg-light put" type="text"> <br>
+                    <label for="">Your Organization</label><br>
+                    <input class="container bg-light put" type="text"> <br>
+                    <label for="">Your Email</label> <br>
+                    <input class="container bg-light put" type="email">
+                    <label for="">Your Phone</label><br>
+                    <input class="container bg-light put" type="Tel"> <br>
+                    <label for="">Message</label><br>
+                    <input class="container bg-light put" type="text"><br>
+                    <button type="button" class="btn btn-outline-primary">send</button>
+                </form>
+            </div>
+        </div>
+
+          <div class="container bg-light text-dark marketing footer col-lg-12 ">
+
+            <!-- Three columns of text below the carousel -->
+            <div class="row p-3">
+
+
+              <div class="col-lg-3 ">
+                <div class="simage">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="105" fill="blue" class="bi bi-box-seam" viewBox="0 0 16 16">
+                  <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2zm3.564 1.426L5.596 5 8 5.961 14.154 3.5zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z"/>
+                </svg> 
+                <a class="footeranchor" href="index.html"><span style="color: blue;">Tech Hub</span></a>
+              </div>
+              <p>Tech Hub helps you acquire, manage and streamline the paper based technology you need to run your business
+              </p>
+             
+               
+              </div>
+              <div class="col-lg-2 ">
+                <h2 style="font-weight: 600;" class="fw-">Sitemap</h2>
+                <a class="anc" style="text-decoration: none;" href="index.html">Home</a>
+                <a class="anc" style="text-decoration: none;" href="aboutus.html">About</a>
+                <a class="anc" style="text-decoration: none;" href="services.html">Services</a>
+                <a class="anc" style="text-decoration: none;" href="contactus.html">Contact</a>
+              </div>
+              <div class="col-lg-3"> 
+                <h2 style="font-weight: 600;" class="fw-">Location and Hours</h2>
+                <p>1, New-Era Avenue off Bright Street,
+                    Favour Estate, Gbagada, Lagos
+                </p>
+                <p>Mon-Fri: 8 am - 5 pm</p>
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-4">
+                <h2 style="font-weight: 600;" class="fw-">Get in Touch</h2>
+                <a style="text-decoration: none;" href="tel:+2348083330117">(+234)-808-333-0117</a>
+                <a style="text-decoration: none;" href="mailto:'osondusamuelchemist75@gmail.com'">info@osondusamuelchemist752gmail.com</a>
+              </div>
+              
+            </div>
+            <div class="basefoot">
+              <p>Copyright &copy; 2024. techub.com. Allrights reserved</p>
+              <a class="ancc" href="privacy.html ">Pivacy Policy</a>
+              <a class="ancc" href="accessibility.html">Accessibility</a>
+            </div>
+        
+        
+           
+        
+           
+
+
+
+         
+
+
+          
+
+          
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

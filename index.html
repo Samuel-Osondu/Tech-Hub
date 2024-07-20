@@ -6,6 +6,10 @@
         <title>project on bootstrap</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
+     
+        body{
+        overflow-x: hidden;
+       } 
       .step-grid{
         height: 100vh;
         display: grid;
@@ -45,8 +49,8 @@
         }
 
         .misvis{
-          height: 50vh;
-          font-size: 20px;
+          height: 45vh;
+          font-size: 18px;
           /* margin: 40px 0 40px 400px; */
         }
 
@@ -57,7 +61,7 @@
         }
 
         .misvis > p{
-          font-size: 25px;
+          font-size: 23px;
           font-weight: 600;
         }
 
@@ -96,7 +100,8 @@
           display: grid;
           grid-template-columns: 1fr 1fr;
           /* border: solid 3px green; */
-          height: 820px;
+          margin-top: 20px;
+          height: 740px;
           background-color: aliceblue;
           color:#27282c ;
           font-weight: 900;
@@ -106,21 +111,21 @@
           grid-template-columns: 2fr 0.5fr 0.5fr ;
           grid-template-rows: 2fr 0.5fr 0.5fr;
           /* border: solid 3px red; */
-          height: 810px;
+          height: 780px;
           /* margin: 0; */
           /* padding: 0; */
           /* row-gap: 0; */
           column-gap: 0px;
          }
          .studgrid{
-          width: 400px;
-          height: 400px;
+          width: 350px;
+          height: 350px;
           /* border: solid 3px red; */
          }
 
          .bigstud{
-          width: 600px;
-          height: 800px;
+          width: 700px;
+          height: 700px;
          }
 
          .grim{
@@ -150,15 +155,56 @@
         }
 
         .footer{
-          display: flex;
+          /* display: flex; */
           /* grid-template-rows: 0.5fr 2fr 2fr 2fr; */
           justify-content: center;
           align-items: center;
           /* text-align: center; */
-          max-width: 100vw;
-          height: 50vh;
-          background-color: blue;
+          max-width: 98.7%; 
+          height: 62vh;
+          font-size: 23px;
           /* border: solid 2px red; */
+          /* text-wrap: fit-content; */
+          /* margin: 0; */
+          padding: 0;
+
+        }
+
+        .simage{
+          display: flex;
+          /* border: solid 2px red; */
+        }
+        .anc{
+          display: block;
+          color: #151516;
+
+        }
+
+        /* .foothead{
+          font-weight: 900;
+        } */
+
+        .footeranchor{
+          font-size: 60px;
+          text-decoration: none;
+        }
+
+        .basefoot{
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          gap: 130px;
+          height: 20vh;
+          width: 100%;
+          background-color: #27282c;
+          color: white ;
+          /* border:solid 2px blue; */
+
+        }
+
+        .ancc{
+            color: white;
+            text-decoration: none;
         }
     </style>
     </head>
@@ -166,22 +212,27 @@
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-box-seam" viewBox="0 0 16 16">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="blue" class="bi bi-box-seam" viewBox="0 0 16 16">
                 <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2zm3.564 1.426L5.596 5 8 5.961 14.154 3.5zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z"/>
-              </svg> <span style="color: blue;">Tech Hub</span> </a>
+              </svg> 
+              <span style="color: blue;">Tech Hub</span></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon">
+                </span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="aboutus.html">About Us</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">coming up</a>
+                    <a class="nav-link active" aria-current="page" href="contactus.html">contact</a>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle active" aria-current="page" href="services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Services
                     </a>
                     <ul class="dropdown-menu">
@@ -291,39 +342,50 @@
 
           <hr class="featurette-divider line">
 
-
-          <div class="container text-bg-primary p-3 marketing footer">
+          <div class="container bg-light text-dark marketing footer col-lg-12 ">
 
             <!-- Three columns of text below the carousel -->
-            <div class="row">
+            <div class="row p-3">
 
 
-              <div class="col-lg-3">
-
-                <!-- <h2 class="fw-normal">Heading</h2> -->
-                <p class="deco">  &copy; 2024</p>
-              </div><!-- /.col-lg-4 -->
-              <div class="col-lg-3">
-                
-                <h2 class="fw-normal">Heading</h2>
-                <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
-                <!-- <p><a class="btn btn-primary" href="#">View details »</a></p> -->
-              </div><!-- /.col-lg-4 -->
-              <div class="col-lg-3">
-                
-                <h2 class="fw-normal">Heading2</h2>
-                <p>Another exciting bit of representative placeholder content. This time, second column.
+              <div class="col-lg-3 ">
+                <div class="simage">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="105" fill="blue" class="bi bi-box-seam" viewBox="0 0 16 16">
+                  <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2zm3.564 1.426L5.596 5 8 5.961 14.154 3.5zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z"/>
+                </svg> 
+                <a class="footeranchor" href="index.html"><span style="color: blue;">Tech Hub</span></a>
+              </div>
+              <p>Tech Hub helps you acquire, manage and streamline the paper based technology you need to run your business
+              </p>
+             
+               
+              </div>
+              <div class="col-lg-2 ">
+                <h2 style="font-weight: 600;" class="fw-">Sitemap</h2>
+                <a class="anc" style="text-decoration: none;" href="index.html">Home</a>
+                <a class="anc" style="text-decoration: none;" href="aboutus.html">About</a>
+                <a class="anc" style="text-decoration: none;" href="services.html">Services</a>
+                <a class="anc" style="text-decoration: none;" href="contactus.html">Contact</a>
+              </div>
+              <div class="col-lg-3"> 
+                <h2 style="font-weight: 600;" class="fw-">Location and Hours</h2>
+                <p>1, New-Era Avenue off Bright Street,
+                    Favour Estate, Gbagada, Lagos
                 </p>
-                <!-- <p><a class="btn btn-secondary" href="#">View details »</a></p> -->
+                <p>Mon-Fri: 8 am - 5 pm</p>
               </div><!-- /.col-lg-4 -->
-              <div class="col-lg-3">
-                
-                <h2 class="fw-normal">Heading</h2>
-                <p>And lastly this, the third column of representative placeholder content.</p>
-                <!-- <p><a class="btn btn-secondary" href="#">View details »</a></p> -->
-              </div><!-- /.col-lg-4 -->
-            </div><!-- /.row -->
-        
+              <div class="col-lg-4">
+                <h2 style="font-weight: 600;" class="fw-">Get in Touch</h2>
+                <a style="text-decoration: none;" href="tel:+2348083330117">(+234)-808-333-0117</a>
+                <a style="text-decoration: none;" href="mailto:'osondusamuelchemist75@gmail.com'">info@osondusamuelchemist752gmail.com</a>
+              </div>
+              
+            </div>
+            <div class="basefoot">
+              <p>Copyright &copy; 2024. techub.com. Allrights reserved</p>
+              <a class="ancc" href="">Pivacy Policy</a>
+              <a class="ancc" href="">Accessibility</a>
+            </div>
         
         
            
