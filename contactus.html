@@ -220,6 +220,7 @@
         }
 
         .headform{
+            padding: 100px 10px 10px 100px;
             width: 50vw;
             font-size: 20px;
             font-weight: 600;
@@ -234,6 +235,9 @@
         label{
             color: #3e3e41;
         }
+
+      
+
         .put{
             border-radius: 5px;
             outline: none;
@@ -306,10 +310,19 @@
             color: white;
             text-decoration: none;
         }
+
+        .ton{
+          width: 100px;
+          height: 50px;
+          font-size: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
     </style>
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="blue" class="bi bi-box-seam" viewBox="0 0 16 16">
@@ -348,7 +361,51 @@
                 </form>
               </div>
             </div>
-        </nav>
+        </nav> -->
+
+
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="blue" class="bi bi-box-seam" viewBox="0 0 16 16">
+              <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2zm3.564 1.426L5.596 5 8 5.961 14.154 3.5zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z"/>
+            </svg> 
+            <span style="color: blue;">Tech Hub</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon">
+              </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="aboutus.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="contactus.html">contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle active" aria-current="page" href="services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Services
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="services.html">Desktop Publishing</a></li>
+                    <li><a class="dropdown-item" href="services.html">Frontend Development</a></li>
+                    <li><a class="dropdown-item" href="services.html">Graphics Design</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-primary" type="submit">send</button>
+              </form>
+            </div>
+          </div>
+      </nav>
+
 
 
         <div class="container-fluid backmage">
@@ -395,16 +452,17 @@
                 <h2>Let us get back with you</h2>
                 <form action="">
                     <Label>Your Name</Label> <br>
-                    <input class="container bg-light put" type="text"> <br>
+                    <input class="container bg-light put text-dark" type="text"> <br>
                     <label for="">Your Organization</label><br>
-                    <input class="container bg-light put" type="text"> <br>
+                    <input class="container bg-light put text-dark" type="text"> <br>
                     <label for="">Your Email</label> <br>
-                    <input class="container bg-light put" type="email">
+                    <input class="container bg-light put text-dark" type="email"> <br>
                     <label for="">Your Phone</label><br>
-                    <input class="container bg-light put" type="Tel"> <br>
+                    <input class="container bg-light put text-dark" type="Tel"> <br>
                     <label for="">Message</label><br>
-                    <input class="container bg-light put" type="text"><br>
-                    <button type="button" class="btn btn-outline-primary">send</button>
+                    <input class="container bg-light put text-dark" type="text"><br> <br> 
+                    <button type="button" class="btn btn-outline-primary ton">send</button>
+                    <!-- <button style="height: 50px; font-size: 30px;" type="button" class="btn btn-outline-primary w-25 ">send</button> -->
                 </form>
             </div>
         </div>
