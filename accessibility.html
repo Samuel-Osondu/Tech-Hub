@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Accesibility</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+      body{
+        overflow-x: hidden; 
+       } 
+    .backmage{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: solid 2px white; */
+        width: 100vw;
+        height: 70vh;
+        justify-self: center;
+        /* margin-top: 80px;  */
+        /* border-radius:  100%; */
+        background-image: url("img/door.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+       }
+
+       .priv{
+        color: white;
+        font-size: 100px;
+        font-weight: 900;
+
+       }
+
+       .bigdiv{
+        width: 100vw;
+        height: 100vh;
+        padding-top: 3rem;
+        /* border: solid 3px red; */
+       }
+
+       .smalldiv{
+        /* border: solid red 2px; */
+        width: 72vw;
+        /* margin-top: 4rem; */
+       }
+
+       /* .line{
+          width: 760px;
+          margin-left: 7000px;
+        } */
+
+       .deco{
+          display: flex;
+          justify-content: center;
+          text-decoration: none;
+          margin-top: 80px;
+          color: white;
+        }
+
+        h5{
+          font-size: 50px;
+        }
+
+        /* h1{
+          font-size: 5rem;
+        } */
+
+        p{
+          font-size: 22px;
+        }
+
+        /* .lab{
+          font-weight: 900;
+        } */
+
+        .line{
+          width: 760px;
+          margin-left: 350px;
+        }
+
+       .footer{
+          /* display: flex; */
+          /* grid-template-rows: 0.5fr 2fr 2fr 2fr; */
+          justify-content: center;
+          align-items: center;
+          /* text-align: center; */
+          max-width: 98.7%; 
+          height: 62vh;
+          font-size: 23px;
+          /* border: solid 2px red; */
+          /* text-wrap: fit-content; */
+          /* margin: 0; */
+          padding: 0;
+
+        }
+
+        .simage{
+          display: flex;
+          /* border: solid 2px red; */
+        }
+        .anc{
+          display: block;
+          color: #151516;
+
+        }
+
+        /* .foothead{
+          font-weight: 900;
+        } */
+
+        .footeranchor{
+          font-size: 60px;
+          text-decoration: none;
+        }
+
+        .basefoot{
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          gap: 130px;
+          height: 20vh;
+          width: 100%;
+          background-color: #27282c;
+          color: white ;
+          /* border:solid 2px blue; */
+
+        }
+
+        .ancc{
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="blue" class="bi bi-box-seam" viewBox="0 0 16 16">
+            <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2zm3.564 1.426L5.596 5 8 5.961 14.154 3.5zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z"/>
+          </svg> 
+          <span style="color: blue;">Tech Hub</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="aboutus.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="contactus.html">contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active" href="index.html#services">
+                  Services
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="services.html">Desktop Publishing</a></li>
+                  <li><a class="dropdown-item" href="services.html">Frontend Development</a></li>
+                  <li><a class="dropdown-item" href="services.html">Graphics Design</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-primary" type="submit">send</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid backmage">
+        <p class="priv">Accessibility Statement</p>
+    </div>
+
+  <div class="container-fluid bg-light text-dark bigdiv">
+    <div class="container-fluid smalldiv">
+      <p class="fs-4">
+        Tech-Hub is committed to making our website cover a wide range of audience. We comply with the Web Content accessibility Guidelines 2.0 Level AA (WCAG 2.0 AA) standard.
+      </p>
+      
+    </div>
+
+    <div class="container-fluid smalldiv">
+     
+      <p class="fs-4">
+        Though we make sure our contents are not provided to third party but there may be some cases whereby some browsers may link to other pages leading to information being collected by other parties. These bodies may not have undertaken efforts to comply with accessibily standards.
+      </p>
+      <p class="fs-4">
+        We keep updating our website for easy accessibility by browsers since standards to access web pages, laws for accessibility and technologies are all advancing day by day.
+      <p>
+    </div>
+    <div class="container-fluid smalldiv">
+      
+      <p class="fs-4">
+        We are committed to helping you navigate through our web page. You can reach us via (+234)-808-333-0117 incase you have question(s) to ask about the accessibility of our website. 
+      <p>
+    </div>
+
+    <div class="container-fluid smalldiv">
+      
+      <p class="fs-4">
+        We will help in the provision of information to you by engaging you via email, telephone or through other means of communication.
+      </p>
+      <p class="fs-4">
+        We apprecite your concerning of making the enhancement of the accesibility of our website a topnotch. We look forward to improving the technologies for better accesibility. Thank you!
+      </p>
+      <p class="fs-4">
+       
+      </p>
+    </div>
+  </div>
+
+    <hr class="featurette-divider line">
+
+          <div class="container bg-light text-dark marketing footer col-lg-12 ">
+
+            <!-- Three columns of text below the carousel -->
+            <div class="row p-4">
+
+
+              <div class="col-lg-3 ">
+                <div class="simage">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="105" fill="blue" class="bi bi-box-seam" viewBox="0 0 16 16">
+                  <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2zm3.564 1.426L5.596 5 8 5.961 14.154 3.5zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z"/>
+                </svg> 
+                <a class="footeranchor" href="index.html"><span style="color: blue;">Tech Hub</span></a>
+              </div>
+              <p>Tech Hub helps you acquire, manage and streamline the paper based technology you need to run your business
+              </p>
+             
+               
+              </div>
+              <div class="col-lg-2 ">
+                <h2 style="font-weight: 600;" class="fw-">Sitemap</h2>
+                <a class="anc" style="text-decoration: none;" href="index.html">Home</a>
+                <a class="anc" style="text-decoration: none;" href="aboutus.html">About</a>
+                <a class="anc" style="text-decoration: none;" href="index.html#services">Services</a>
+                <a class="anc" style="text-decoration: none;" href="contactus.html">Contact</a>
+              </div>
+              <div class="col-lg-3"> 
+                <h2 style="font-weight: 600;" class="fw-">Location and Hours</h2>
+                <p>1, New-Era Avenue off Bright Street,
+                    Favour Estate, Gbagada, Lagos
+                </p>
+                <p>Mon-Fri: 8 am - 5 pm</p>
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-4">
+                <h2 style="font-weight: 600;" class="fw-">Get in Touch</h2>
+                <a style="text-decoration: none;" href="tel:+2348083330117">(+234)-808-333-0117</a>
+                <a style="text-decoration: none;" href="mailto:'osondusamuelchemist75@gmail.com'">info@osondusamuelchemist752gmail.com</a>
+              </div>
+              
+            </div>
+            <div class="basefoot">
+              <p>Copyright &copy; 2024. techub.com. All rights reserved</p>
+              <a class="ancc" href="privacy.html">Privacy Policy</a>
+              <a class="ancc" href="accessibility.html">Accessibility</a>
+            </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
